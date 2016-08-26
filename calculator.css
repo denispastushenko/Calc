@@ -1,0 +1,40 @@
+body{background:#FFFFFF}
+
+form{
+    height: 440px;
+    width:  432px ;
+    border: 2px solid;
+    border-color: #696969;
+    margin-left: 450px;
+     margin-right: 450px;
+    margin-top: 200px;
+     margin-bottom: 200px;
+   
+   
+   
+}
+#calc{ 
+    border-color: gray;
+    border-width: 1px;
+    width:422px; 
+    height: 70px;
+    font-size: 300%;
+     margin-bottom: 8px;
+     margin-left: 4px;
+    margin-top: 10px;
+    text-align: right;
+
+     }
+input[type="button"]{
+   
+    font-size: 150%;
+   width:100px; 
+    height: 50px; 
+    margin-bottom: 8px;
+     margin-left: 4px;
+    font-weight: 300  ;
+    font-style: italic;
+    
+   }
+
+

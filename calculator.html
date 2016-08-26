@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <script src="JS/calculator.js"></script>
+        <link rel="stylesheet" href="CSS/calculator.css">
+    </head>
+    <body>
+         <form  method="post" id="form"  name="calculator" action="">
+             <input     type="text"; name="calc" placeholder="0" id="calc" readonly><br>
+            <span>
+                  <input id="-" style=" background: #DCDCDC"   type="button" value="+/-" onclick="changeSign(this)"> 
+                  <input  style=" background: #DCDCDC"   type="button" value="exp" onclick="exp()"> 
+                  <input style=" background: #DCDCDC"    type="button" value="log" onclick="log()"> 
+                  <input style=" background: #DCDCDC"    type="button" value="CE" onclick="delLastSign(this)"> 
+             </span>
+             
+                  
+              <span>
+                <input  name="pow"  style=" background: #DCDCDC"   type="button" value="**" onclick="setSign(this);this.disabled = true;point.disabled = false">
+                 <input   name="sqrt" style=" background: #DCDCDC"  type="button" value="√" onclick='setSqrt(this);this.disabled = true;point.disabled = false;point.disabled = true;'>
+                  <input  name="percent" style=" background: #DCDCDC"  type="button" value="%" onclick="setSign(this);this.disabled = true;point.disabled = false">
+                  <input   style=" background: #DCDCDC"  type="button" value="C"onclick="clearEntry();point.disabled = false; mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false"><br>
+            <span  >
+                <input   style=" background: #F5F5F5"    type="button" value="7" onclick="press(this);  mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false" >
+                <input   style=" background: #F5F5F5"   type="button" value="8" onclick="press(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                <input      style=" background: #F5F5F5"  type="button" value="9" onclick="press(this);  mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                
+                </span>
+                <input  name="divid"  style=" background: #DCDCDC" type="button" value="/"onclick="setSign(this);this.disabled = true;point.disabled = false"><br>
+                <span  >
+                <input     style=" background: #F5F5F5" type="button" value="4" onclick="press(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                <input   style=" background: #F5F5F5"  type="button" value="5" onclick="press(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                <input     style=" background: #F5F5F5"
+                       type="button" value="6" onclick="press(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                     
+                </span>
+               
+                 <input  name = "mul"  style=" background: #DCDCDC"   type="button" value="*"onclick="setSign(this);this.disabled = true;point.disabled = false"><br>
+                 <span>
+                <input   style=" background: #F5F5F5" type="button" value="1" onclick="press(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                <input    style=" background: #F5F5F5" type="button" value="2" onclick="press(this) ; mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                <input    style=" background: #F5F5F5" type="button" value="3" onclick="press(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                    </span>
+                     
+                    <input  name="minus" style=" background: #DCDCDC"   type="button" value="-"onclick='setSign(this);this.disabled = true;point.disabled = false'>
+                <span>
+                <input  id="zeroo"  style=" background: #F5F5F5" type="button" value="0" onclick="press(this);zero(this); mul.disabled = false; plus.disabled = false; divid.disabled = false; minus.disabled = false;sqrt.disabled = false; pow.disabled = false; percent.disabled = false">
+                    </span>
+                    <input  id="11" name="point"  style=" background: #F5F5F5"   type="button" value="." onclick='press(this);point1(this);'>
+               <span>
+                   
+            <input   style=" background: #4169E0; color: white;"  type="button" value="=" onclick="result();point.disabled = false;sqrt.disabled = false;">
+            <input  name="plus"  style=" background: #DCDCDC" type="button" value="+" onclick="setSign(this);this.disabled = true;point.disabled = false">
+                    </span>
+                </span>
+            </span>
+      
+            
+            </form>
+   
+        
+    </body>
+</html>
